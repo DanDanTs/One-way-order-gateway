@@ -1,0 +1,1 @@
+java -jar -XX:+UseParallelGC -XX:MaxGCPauseMillis=30 -XX:GCTimeRatio=5 target/OrderGateway-1.0-SNAPSHOT.jar
