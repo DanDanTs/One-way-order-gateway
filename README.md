@@ -20,9 +20,16 @@ garbage collection.
 
 ## Result for latency test
 Testing Env: Windows 10, 6 Core 12 Thread, 8 GB Ram
+Throttle = 100
 ```sh
 avg = 69597.71, 0 = 0, 50 = 87000, 95 = 135800, 99 = 163900, 100 = 1170500
 ```
 
+Sometimes, after the testing environment reboot, the result went like:
+```sh
+avg = 9002.8, 0 = 0, 50 = 0, 95 = 0, 99 = 0, 100 = 28983500
+```
+
 ## Further enhancement
-`ConcurrentLinkedQueue` in `MessageBuffer` should be completely removed
+`ConcurrentLinkedQueue` in `MessageBuffer` should be completely removed.
+Remove the expensive call of `ConcurrentLinkedQueue.size()` for console log printing on main thread.
