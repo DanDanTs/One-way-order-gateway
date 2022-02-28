@@ -3,7 +3,7 @@ Dummy order gateway which listens to a UDP Port and forward the same message to 
 
 
 ## Dev Environment:
-This project is built as Maven project with `Apache NetBeans 12.6` on `JDK 8`. 
+This project is built as Maven project with `Apache NetBeans 12.6` on `JDK 8` under Windows.
 
 ## Steps:
 1. Download or git clone the project to local repo
@@ -19,6 +19,7 @@ garbage collection.
 
 
 ## Result for latency test
+Testing Env: Windows 10, 6 Core 12 Thread, 8 GB Ram
 ```sh
 avg = 69597.71, 0 = 0, 50 = 87000, 95 = 135800, 99 = 163900, 100 = 1170500
 ```
