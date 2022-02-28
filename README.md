@@ -22,3 +22,6 @@ garbage collection.
 ```sh
 avg = 69597.71, 0 = 0, 50 = 87000, 95 = 135800, 99 = 163900, 100 = 1170500
 ```
+
+## Further enhancement
+`ConcurrentLinkedQueue` in `MessageBuffer` should be completely removed
