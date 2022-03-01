@@ -79,9 +79,6 @@ public class OrderGateway {
                 sb.append(sendThread.getSendBytes()).append("B) ");
                 sb.append("[Rule1=").append(valdThread.getInvalidPriceCount());
                 sb.append(" Rule3=").append(sendThread.getCancelOutCount()).append("|").append(sendThread.getCancelDropCount()).append("]");
-                sb.append(" [IBuf=").append(inboundQ.Size()); 
-                sb.append(", OBuf=").append(outboundQ.Size()); 
-                sb.append("]");
                 System.out.println(sb);
                 sb.delete(0, sb.length());
                 lastPrintTime = localTimestampSec;
